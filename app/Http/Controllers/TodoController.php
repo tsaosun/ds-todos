@@ -58,6 +58,8 @@ class TodoController extends Controller
     public function show($id)
     {
         // Write the code for your assignment here.
+        //Approach: redirect to the new proper url (customURL/todo/id#) upon click on task
+        return redirect('/todo/',$id));
     }
 
     /**

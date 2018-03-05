@@ -42,7 +42,6 @@
     </div>
 
     <!-- Current todos -->
-    <!-- Current todos -->
     @if (count($todos) > 0)
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -87,4 +86,15 @@
             </div>
         </div>
     @endif
+    <!-- Individual todos -->
+    <!-- Approach: Based on the id of the todo clicked, get the name and description of the specific todo-->
+    <!-- here and display each todo within a div class-->
+
+    <!-- Link to individual task in the the user clicked on first and then, display the task:-->
+    <div class="form-group">
+        <p>
+            <strong>Task Title:</strong> {{ $todo->name }}<br>
+            <strong>Description:</strong> {{$todo->description }}<br>
+        </p>
+    </div>
 @endsection
